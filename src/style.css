@@ -1,0 +1,838 @@
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap";
+
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+	font-family: Noto Sans;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html, body {
+	height: 100%;
+	line-height: 1;
+    background: #000;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+/* ------------ */
+.__container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box
+}
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper-purple {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+    background: #5036E6;
+}
+/* ------------ */
+
+.logo {
+    width: 38px;
+    height: 54px
+}
+@media screen and (max-width: 320px) {
+    .logo {
+        width: 26px;
+        height: 36px; 
+    }
+}
+
+.logo_header {
+    padding: 35px 0 0
+}
+
+@media screen and (max-width: 768px) {
+    .logo_header {
+        padding: 26px 0 0
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .logo_header {
+        padding: 16px 0 0
+    }
+}
+
+
+.logo_footer {
+    margin: 80px 0 60px;
+}
+
+@media screen and (max-width: 320px) {
+    .logo_footer {
+        margin: 40px 0;
+    }
+}
+
+.logo_popup {
+    padding-top: 120px
+}
+
+@media screen and (max-width: 768px) {
+    .logo_popup {
+        padding-top: 200px
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo_popup {
+        padding-top: 120px
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .logo {
+        width: 26px;
+        height: 36px
+    }
+}
+/* ------------ */
+.btn {
+    background-color: #009465;
+    border-radius: 8px;
+    border: none;
+    width: 218px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #066c4c
+}
+
+@media screen and (max-width: 412px) {
+    .btn {
+        width: 140px;
+        height: 30px
+    }
+
+    .btn_size_small {
+        width: 108px;
+        height: 18px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn_size_small {
+        width: 184px;
+        height: 44px;
+        font-size: 13px; 
+    }
+
+    .btn_popup {
+        margin-bottom: 200px
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .btn_size_small {
+        width: 140px;
+        height: 30px;
+        font-size: 10px; 
+    }
+    .btn_popup {
+        margin-bottom: 120px
+    }
+}
+/* ------------ */
+.header {
+    background-color: #000
+}
+
+.header__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 160px * 2);
+    margin: 0 auto
+}
+
+@media screen and (max-width: 768px) {
+    .header__box {
+        width: calc(100% - 50px * 2)
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .header__box {
+        width: calc(100% - 20px * 2)
+    }
+}
+
+.header__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    padding: 39px 0 0
+}
+
+@media screen and (max-width: 768px) {
+    .header__buttons {
+        padding: 30px 0 0;
+        gap: 30px
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .header__buttons {
+        padding: 19px 0 0
+    }
+}
+
+.header__link {
+    font-size: 15px;
+    line-height: 110%;
+    text-decoration: none
+}
+
+@media screen and (max-width: 552px) {
+    .header__link {
+        display: none
+    }
+}
+/* ------------ */
+.chess__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000
+}
+
+.chess__box {
+    margin: 60px 0 71px 160px;
+    max-width: 500px
+}
+
+@media screen and (max-width: 768px) {
+    .chess__box {
+        margin-left: 50px;
+        margin-bottom: 50px
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .chess__box {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 50px
+    }
+}
+
+.chess__club {
+    padding-bottom: 70px
+}
+
+@media screen and (max-width: 412px) {
+    .chess__club {
+        width: 63px;
+        height: 40px;
+        padding-bottom: 60px
+    }
+}
+
+.chess__name {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 90%;
+    margin: 0
+}
+
+@media screen and (max-width: 552px) {
+    .chess__name {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 90%
+    }
+}
+
+.chess__text {
+    font-size: 20px;
+    line-height: 130%;
+    padding: 40px 0 182px;
+    margin: 0
+}
+
+@media screen and (max-width: 768px) {
+    .chess__text {
+        padding-bottom: 212px
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .chess__text {
+        padding-bottom: 110px;
+        font-size: 12px;
+        width: 280px;
+        padding-top: 20px
+    }
+}
+
+.chess__circle {
+    background-image: url(/media/lazytosort/circlesgroup.png);
+    background-position: right;
+    width: 640px;
+    height: 640px;
+    margin: 72px 0 71px
+}
+
+@media screen and (max-width: 1300px) {
+    .chess__circle {
+        background-image: url(/media/lazytosort/bluesemicircle.png);
+        height: 520px;
+        margin-top: 226px;
+        margin-bottom: 50px
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .chess__circle {
+        display: none
+    }
+}
+
+.chess__board {
+    width: 416px;
+    height: 104px
+}
+
+.chess__board_colour_green {
+    margin-top: 70px;
+    margin-left: 324px
+}
+
+@media screen and (max-width: 768px) {
+    .chess__board_colour_green {
+        padding-right: 50px;
+        margin-top: 50px;
+        margin-left: 82px
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .chess__board_colour_green {
+        width: 280px;
+        height: 70px;
+        margin: 20px;
+        padding-right: 0
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .chess__board {
+        width: 280px;
+        height: 70px
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .chess__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    .chess__item {
+        background-image: url(/media/lazytosort/Group343.png);
+        padding-bottom: 50px;
+        width: 120px;
+        padding-right: 20px
+    }
+}
+/* ------------ */
+.slider {
+    background-color: #5036e6
+}
+
+.slider__title {
+    padding: 80px 0 40px 160px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 90%
+}
+
+@media screen and (max-width: 768px) {
+    .slider__title {
+        padding: 50px 0 40px 50px
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .slider__title {
+        padding: 20px;
+        font-size: 40px
+    }
+}
+
+.slider__text {
+    font-size: 20px;
+    line-height: 130%;
+    padding: 0 0 110px 160px;
+    width: 500px;
+    margin: 0
+}
+
+@media screen and (max-width: 768px) {
+    .slider__text {
+        padding: 0 0 140px 50px
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .slider__text {
+        padding: 0 20px 60px;
+        font-size: 12px;
+        width: 280px
+    }
+}
+
+.slider__container {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin: 0 0 0 160px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll
+}
+
+.slider__container_padding_zero {
+    padding-bottom: 0
+}
+
+@media screen and (max-width: 1300px) {
+    .slider__container {
+        overflow: hidden
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider__container {
+        gap: 28px;
+        margin: 0 0 0 50px;
+        padding-bottom: 50px
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .slider__container {
+        margin: 0 0 0 20px;
+        padding-bottom: 40px
+    }
+}
+
+.slider__photo {
+    width: 320px;
+    height: 320px;
+    padding-bottom: 30px
+}
+
+@media screen and (max-width: 412px) {
+    .slider__photo {
+        width: 280px;
+        height: 280px;
+        padding-bottom: 20px;
+        box-shadow: none;
+        border: none
+    }
+}
+
+.slider__name {
+    font-size: 22px;
+    line-height: 130%;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin: 0
+}
+
+@media screen and (max-width: 412px) {
+    .slider__name {
+        padding-bottom: 5px;
+        font-size: 18px;
+        text-align: center
+    }
+}
+
+.slider__profession {
+    margin: 0;
+    font-size: 20px;
+    line-height: 130%
+}
+
+@media screen and (max-width: 412px) {
+    .slider__profession {
+        font-size: 12px;
+        text-align: center
+    }
+}
+
+.slider__img {
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px
+}
+
+@media screen and (max-width: 850px) {
+    .slider__img {
+        padding-left: 0
+    }
+}
+
+.slider__semicircle {
+    margin-top: 44px;
+    background-image: url(/media/lazytosort/Group339.png);
+    width: 440px;
+    height: 220px
+}
+
+@media screen and (max-width: 768px) {
+    .slider__semicircle {
+        background-image: url(/media/lazytosort/greenquadrant.png);
+    
+        margin-top: 10px
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .slider__semicircle {
+        display: none
+    }
+}
+
+.slider_colour_black {
+    background-color: #000
+}
+
+.slider__man {
+    padding-right: 0;
+    scroll-snap-align: start
+}
+
+@media screen and (max-width: 412px) {
+    .slider__man {
+        display: none
+    }
+
+    .slider__man_show_active {
+        display: block
+    }
+
+    .slider__dots {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center
+    }
+
+    .slider__dot {
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 50%;
+        opacity: .5;
+        transition: opacity .6s ease
+    }
+
+    .slider__dot_show_active {
+        opacity: 1
+    }
+}
+/* ------------ */
+.invite {
+    background-color: #5036e6
+}
+
+.invite__container {
+    padding: 60px 0;
+    position: relative;
+    display: flex;
+    flex-direction: row
+}
+
+@media screen and (max-width: 768px) {
+    .invite__container {
+        padding: 50px 0
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .invite__container {
+        padding: 0 0 0 20px
+    }
+}
+
+.invite__semicircle {
+    max-width: 440px;
+    max-height: 440px
+}
+
+@media screen and (max-width: 768px) {
+    .invite__semicircle {
+        display: none
+    }
+}
+
+.invite__quadrant {
+    position: absolute;
+    left: 0;
+    top: 280px
+}
+
+@media screen and (max-width: 768px) {
+    .invite__quadrant {
+        display: none
+    }
+}
+
+.invite__circle {
+    background-image: url(/media/lazytosort/greencircle.png);
+    width: 440px;
+    margin-bottom: 0;
+    height: 440px
+}
+
+@media screen and (max-width: 768px) {
+    .invite__circle {
+        background-image: url(/media/lazytosort/greensemicircle.png);
+        width: 300px;
+        height: 360px
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .invite__circle {
+        display: none
+    }
+}
+
+.invite__box {
+    margin: 110px 0 0 100px
+}
+
+@media screen and (max-width: 768px) {
+    .invite__box {
+        margin: 80px 0 0
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .invite__box {
+        margin: 60px 0 0
+    }
+}
+
+.invite__title {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 90%;
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+@media screen and (max-width: 552px) {
+    .invite__title {
+        font-size: 40px
+    }
+}
+
+.invite__text {
+    margin: 0;
+    font-size: 20px;
+    line-height: 130%;
+    padding-top: 40px;
+    width: 520px
+}
+
+@media screen and (max-width: 552px) {
+    .invite__text {
+        font-size: 12px;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        max-width: 200px
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .invite__bottom {
+        background-image: url(/media/lazytosort/Group345.png);
+        width: 280px;
+        height: 140px
+    }
+}
+/* ------------ */
+.footer {
+    background-color: #5036e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+@media screen and (max-width: 320px) {
+    .footer_btn {
+        font-size: 10px; 
+    }
+}
+
+.footer__text {
+    padding: 60px 0 20px;
+    font-size: 20px;
+    line-height: 130%;
+    margin: 0
+}
+
+@media screen and (max-width: 412px) {
+    .footer__text {
+        font-size: 12px;
+        padding: 40px 0 10px
+    }
+}
+
+.footer__club {
+    color: #8E9199;
+    padding-bottom: 80px;
+    margin: 0;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__club {
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .footer__club {
+        padding-bottom: 40px
+    }
+}
+/* ------------ */
+.popup {
+    background-color: #000;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto
+}
+
+.popup__button {
+    margin-bottom: 120px
+}
+
+.popup__title {
+    margin: 0;
+    padding: 50px 0 78px;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 90%
+}
+
+@media screen and (max-width: 320px) {
+    .popup__title {
+        padding: 40px 0
+    }
+}
+
+.popup_opened {
+    display: block
+}
+
+.popup__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    max-width: 100%
+}
+
+.popup__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.popup__item {
+    width: 500px;
+    height: 48px;
+    margin: 0 auto;
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    line-height: 18px;
+    text-indent: 18px
+}
+
+.popup__item:focus {
+    outline: 1px solid #5036e6
+}
+
+.popup__item_el_name {
+    margin-bottom: 20px
+}
+
+@media screen and (max-width: 320px) {
+    .popup__item_el_name {
+        margin-bottom: 10px
+    }
+}
+
+.popup__item_el_email {
+    margin-bottom: 253px
+}
+
+@media screen and (max-width: 768px) {
+    .popup__item_el_email {
+        margin-bottom: 243px
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .popup__item_el_email {
+        margin-bottom: 143px
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .popup__item {
+        width: 280px;
+        height: 42px
+    }
+}
