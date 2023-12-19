@@ -1,64 +1,67 @@
 @import "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap";
+@import "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css";
 
-*, ::before, ::after {
-	margin: 0;
-	padding: 0;
-	font-family: Noto Sans;
-	color: #fff;
+*,
+::before, ::after {
+    margin: 0;
+    padding: 0;
+    font-family: Noto Sans;
+    color: #fff
 }
 
 a {
-	text-decoration: none;
-	color: #fff;
+    text-decoration: none;
+    color: #fff
 }
 
 ul, ol, li {
-	list-style: none;
+    list-style: none
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: inherit;
-	font-size: inherit;
+    font-weight: inherit;
+    font-size: inherit
 }
 
 html, body {
-	height: 100%;
-	line-height: 1;
-    background: #000;
+    height: 100%;
+    line-height: 1;
+    background: #000
 }
 
 div {
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
-/* ------------ */
+
 .__container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     box-sizing: border-box
 }
+
 .wrapper {
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column
 }
 
 .wrapper-purple {
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-    background: #5036E6;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #5036E6
 }
-/* ------------ */
 
 .logo {
     width: 38px;
     height: 54px
 }
+
 @media screen and (max-width: 320px) {
     .logo {
         width: 26px;
-        height: 36px; 
+        height: 36px
     }
 }
 
@@ -78,14 +81,13 @@ div {
     }
 }
 
-
 .logo_footer {
-    margin: 80px 0 60px;
+    margin: 80px 0 60px
 }
 
 @media screen and (max-width: 320px) {
     .logo_footer {
-        margin: 40px 0;
+        margin: 40px 0
     }
 }
 
@@ -111,7 +113,7 @@ div {
         height: 36px
     }
 }
-/* ------------ */
+
 .btn {
     background-color: #009465;
     border-radius: 8px;
@@ -119,7 +121,7 @@ div {
     width: 218px;
     height: 48px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .btn:hover {
@@ -129,7 +131,8 @@ div {
 @media screen and (max-width: 412px) {
     .btn {
         width: 140px;
-        height: 30px
+        height: 30px;
+        font-size: 10px;
     }
 
     .btn_size_small {
@@ -142,7 +145,7 @@ div {
     .btn_size_small {
         width: 184px;
         height: 44px;
-        font-size: 13px; 
+        font-size: 13px
     }
 
     .btn_popup {
@@ -154,13 +157,14 @@ div {
     .btn_size_small {
         width: 140px;
         height: 30px;
-        font-size: 10px; 
+        font-size: 10px
     }
+
     .btn_popup {
         margin-bottom: 120px
     }
 }
-/* ------------ */
+
 .header {
     background-color: #000
 }
@@ -217,7 +221,7 @@ div {
         display: none
     }
 }
-/* ------------ */
+
 .chess__container {
     display: flex;
     flex-direction: row;
@@ -365,7 +369,7 @@ div {
         padding-right: 20px
     }
 }
-/* ------------ */
+
 .slider {
     background-color: #5036e6
 }
@@ -517,7 +521,6 @@ div {
 @media screen and (max-width: 768px) {
     .slider__semicircle {
         background-image: url(/media/lazytosort/greenquadrant.png);
-    
         margin-top: 10px
     }
 }
@@ -567,7 +570,7 @@ div {
         opacity: 1
     }
 }
-/* ------------ */
+
 .invite {
     background-color: #5036e6
 }
@@ -689,7 +692,7 @@ div {
         height: 140px
     }
 }
-/* ------------ */
+
 .footer {
     background-color: #5036e6;
     display: flex;
@@ -699,7 +702,7 @@ div {
 
 @media screen and (max-width: 320px) {
     .footer_btn {
-        font-size: 10px; 
+        font-size: 10px
     }
 }
 
@@ -721,7 +724,7 @@ div {
     color: #8E9199;
     padding-bottom: 80px;
     margin: 0;
-    font-size: 15px;
+    font-size: 15px
 }
 
 @media screen and (max-width: 768px) {
@@ -735,7 +738,7 @@ div {
         padding-bottom: 40px
     }
 }
-/* ------------ */
+
 .popup {
     background-color: #000;
     display: none;

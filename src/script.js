@@ -12,50 +12,50 @@ const buttleDots = buttle.querySelectorAll('.slider__dot')
 
 // Auth
 function openPopup(popup) {
-  popup.classList.add('popup_opened')
+    popup.classList.add('popup_opened')
 }
 
 cardButtons.forEach((button) => {
-  button.addEventListener('click', function () {
-    openPopup(cardForm)
-  })
+    button.addEventListener('click', function () {
+        openPopup(cardForm)
+    })
 })
 
 function closePopup(popup) {
-  popup.classList.remove('popup_opened')
+    popup.classList.remove('popup_opened')
 }
 
 closeButton.addEventListener('click', function () {
-  closePopup(cardForm)
+    closePopup(cardForm)
 })
 
 // Slider
 function cleanAtiveClass(sliders, sliderDots) {
-  sliders.forEach((men) => {
-    men.classList.remove('slider__man_show_active')
-  })
-  sliderDots.forEach((dot) => {
-    dot.classList.remove('slider__dot_show_active')
-  })
+    sliders.forEach((men) => {
+        men.classList.remove('slider__man_show_active')
+    })
+    sliderDots.forEach((dot) => {
+        dot.classList.remove('slider__dot_show_active')
+    })
 }
 
 function addActiveClass(sliders, sliderDots, idx) {
-  const slider = sliders[idx]
-  const sliderDot = sliderDots[idx]
-  slider.classList.add('slider__man_show_active')
-  sliderDot.classList.add('slider__dot_show_active')
+    const slider = sliders[idx]
+    const sliderDot = sliderDots[idx]
+    slider.classList.add('slider__man_show_active')
+    sliderDot.classList.add('slider__dot_show_active')
 }
 
 teamDots.forEach((dot, idx) => {
-  dot.addEventListener('click', () => {
-    cleanAtiveClass(teamMan, teamDots)
-    addActiveClass(teamMan, teamDots, idx)
-  })
+    dot.addEventListener('click', () => {
+        cleanAtiveClass(teamMan, teamDots)
+        addActiveClass(teamMan, teamDots, idx)
+    })
 })
 
 buttleDots.forEach((dot, idx) => {
-  dot.addEventListener('click', () => {
-    cleanAtiveClass(buttleMan, buttleDots)
-    addActiveClass(buttleMan, buttleDots, idx)
-  })
+    dot.addEventListener('click', () => {
+        cleanAtiveClass(buttleMan, buttleDots)
+        addActiveClass(buttleMan, buttleDots, idx)
+    })
 })
