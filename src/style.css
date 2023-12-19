@@ -1,8 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap";
 @import "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css";
 
-*,
-::before, ::after {
+html, body, button, a, ::before, ::after {
     margin: 0;
     padding: 0;
     font-family: Noto Sans;
@@ -299,7 +298,7 @@ div {
 }
 
 .chess__circle {
-    background-image: url(/media/lazytosort/circlesgroup.png);
+    background-image: url(/media/adapt/circlesgroup.png);
     background-position: right;
     width: 640px;
     height: 640px;
@@ -308,7 +307,7 @@ div {
 
 @media screen and (max-width: 1300px) {
     .chess__circle {
-        background-image: url(/media/lazytosort/bluesemicircle.png);
+        background-image: url(/media/adapt/bluesemicircle.png);
         height: 520px;
         margin-top: 226px;
         margin-bottom: 50px
@@ -363,7 +362,7 @@ div {
     }
 
     .chess__item {
-        background-image: url(/media/lazytosort/Group343.png);
+        background-image: url(/media/adapt/Group343.png);
         padding-bottom: 50px;
         width: 120px;
         padding-right: 20px
@@ -513,14 +512,14 @@ div {
 
 .slider__semicircle {
     margin-top: 44px;
-    background-image: url(/media/lazytosort/Group339.png);
+    background-image: url(/media/adapt/Group339.png);
     width: 440px;
     height: 220px
 }
 
 @media screen and (max-width: 768px) {
     .slider__semicircle {
-        background-image: url(/media/lazytosort/greenquadrant.png);
+        background-image: url(/media/adapt/greenquadrant.png);
         margin-top: 10px
     }
 }
@@ -618,7 +617,7 @@ div {
 }
 
 .invite__circle {
-    background-image: url(/media/lazytosort/greencircle.png);
+    background-image: url(/media/adapt/greencircle.png);
     width: 440px;
     margin-bottom: 0;
     height: 440px
@@ -626,31 +625,31 @@ div {
 
 @media screen and (max-width: 768px) {
     .invite__circle {
-        background-image: url(/media/lazytosort/greensemicircle.png);
+        background-image: url(/media/adapt/greensemicircle.png);
         width: 300px;
         height: 360px
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     .invite__circle {
         display: none
     }
 }
 
 .invite__box {
-    margin: 110px 0 0 100px
+    margin: 110px 0 0 100px;
 }
 
 @media screen and (max-width: 768px) {
     .invite__box {
-        margin: 80px 0 0
+        margin: 80px 0 0;
     }
 }
 
 @media screen and (max-width: 320px) {
     .invite__box {
-        margin: 60px 0 0
+        margin: 60px 0 0;
     }
 }
 
@@ -687,7 +686,7 @@ div {
 
 @media screen and (max-width: 412px) {
     .invite__bottom {
-        background-image: url(/media/lazytosort/Group345.png);
+        background-image: url(/media/adapt/Group345.png);
         width: 280px;
         height: 140px
     }
@@ -736,6 +735,12 @@ div {
 @media screen and (max-width: 412px) {
     .footer__club {
         padding-bottom: 40px
+    }
+}
+
+@media screen and (max-width: 312px) {
+    .footer__club {
+        font-size: 10px;
     }
 }
 
