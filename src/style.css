@@ -300,9 +300,13 @@ div {
 .chess__circle {
     background-image: url(/media/adapt/circlesgroup.png);
     background-position: right;
-    width: 640px;
+    margin: 72px 0 71px;
     height: 640px;
-    margin: 72px 0 71px
+    object-fit: contain;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    width: 640px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -314,7 +318,7 @@ div {
     }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 712px) {
     .chess__circle {
         display: none
     }
@@ -354,7 +358,7 @@ div {
     }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 712px) {
     .chess__items {
         display: flex;
         flex-direction: row;
@@ -842,5 +846,26 @@ div {
     .popup__item {
         width: 280px;
         height: 42px
+    }
+}
+
+.welcoming-section__patterns {
+    display: flex;
+    left: 0;
+    position: absolute;
+}
+
+@media screen and (max-width: 1279px) {
+    .welcoming-section__patterns {
+        height: 360px;
+        left: -190px;
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .welcoming-section__patterns {
+        left: 20px;
+        top: 184px;
     }
 }
