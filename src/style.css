@@ -152,7 +152,7 @@ div {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     .btn_size_small {
         width: 140px;
         height: 30px;
